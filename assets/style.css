@@ -1,0 +1,283 @@
+:root {
+  --bg: #f7f5ef;
+  --paper: #fffdf8;
+  --ink: #22201c;
+  --muted: #6d665c;
+  --line: #ded7c9;
+  --accent: #1f766b;
+  --accent-dark: #14564e;
+  --code-bg: #1e2426;
+  --code-ink: #edf6f4;
+  --soft: #e8f2ef;
+  --warn: #fff4d8;
+  --shadow: 0 18px 45px rgba(55, 45, 30, 0.12);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--ink);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+  line-height: 1.75;
+}
+
+a {
+  color: var(--accent-dark);
+}
+
+.sidebar {
+  position: fixed;
+  inset: 0 auto 0 0;
+  width: 300px;
+  padding: 24px 20px;
+  background: #efe9dc;
+  border-right: 1px solid var(--line);
+  overflow-y: auto;
+}
+
+.brand {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  margin-bottom: 24px;
+}
+
+.brand-mark {
+  display: grid;
+  width: 44px;
+  height: 44px;
+  place-items: center;
+  border-radius: 8px;
+  background: var(--accent);
+  color: white;
+  font-weight: 800;
+}
+
+.brand strong,
+.brand span {
+  display: block;
+}
+
+.brand span {
+  color: var(--muted);
+  font-size: 13px;
+}
+
+.toc {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.toc a {
+  display: block;
+  padding: 8px 10px;
+  border-radius: 6px;
+  color: #484137;
+  text-decoration: none;
+  font-size: 14px;
+  line-height: 1.35;
+}
+
+.toc a:hover {
+  background: rgba(31, 118, 107, 0.12);
+  color: var(--accent-dark);
+}
+
+.toc a.level-2 {
+  padding-left: 22px;
+  color: var(--muted);
+  font-size: 13px;
+}
+
+.page {
+  margin-left: 300px;
+  min-height: 100vh;
+}
+
+.hero {
+  padding: 56px min(7vw, 84px) 44px;
+  background: linear-gradient(180deg, #fffaf0 0%, #f7f5ef 100%);
+  border-bottom: 1px solid var(--line);
+}
+
+.eyebrow {
+  margin: 0 0 12px;
+  color: var(--accent-dark);
+  font-weight: 700;
+}
+
+.hero h1 {
+  max-width: 940px;
+  margin: 0;
+  font-size: clamp(34px, 5vw, 64px);
+  line-height: 1.05;
+  letter-spacing: 0;
+}
+
+.lead {
+  max-width: 900px;
+  margin: 22px 0 0;
+  color: var(--muted);
+  font-size: 19px;
+}
+
+.hero-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 28px;
+}
+
+.hero-actions a {
+  display: inline-flex;
+  align-items: center;
+  min-height: 42px;
+  padding: 0 16px;
+  border-radius: 8px;
+  background: var(--accent);
+  color: white;
+  text-decoration: none;
+  font-weight: 700;
+}
+
+.hero-actions a + a {
+  background: transparent;
+  color: var(--accent-dark);
+  border: 1px solid var(--accent);
+}
+
+.content {
+  max-width: 980px;
+  margin: 0 auto;
+  padding: 44px 28px 96px;
+}
+
+.content section {
+  margin: 34px 0;
+  padding: 34px;
+  background: var(--paper);
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  box-shadow: var(--shadow);
+}
+
+.content h1,
+.content h2,
+.content h3 {
+  line-height: 1.25;
+  letter-spacing: 0;
+}
+
+.content h1 {
+  margin: 0 0 20px;
+  font-size: 34px;
+}
+
+.content h2 {
+  margin: 28px 0 12px;
+  font-size: 25px;
+}
+
+.content h3 {
+  margin: 22px 0 10px;
+  font-size: 19px;
+}
+
+.content p {
+  margin: 12px 0;
+}
+
+.content ul {
+  padding-left: 24px;
+}
+
+.content li {
+  margin: 4px 0;
+}
+
+.content code {
+  padding: 2px 5px;
+  border-radius: 5px;
+  background: #ece5d8;
+  font-family: "SFMono-Regular", Consolas, "Liberation Mono", monospace;
+  font-size: 0.92em;
+}
+
+.content pre {
+  margin: 18px 0;
+  padding: 18px;
+  overflow-x: auto;
+  border-radius: 8px;
+  background: var(--code-bg);
+  color: var(--code-ink);
+}
+
+.content pre code {
+  padding: 0;
+  background: transparent;
+  color: inherit;
+}
+
+.content blockquote {
+  margin: 18px 0;
+  padding: 14px 18px;
+  border-left: 4px solid var(--accent);
+  background: var(--soft);
+  color: #2e4c47;
+}
+
+.loading {
+  padding: 28px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--paper);
+}
+
+.back-to-top {
+  position: fixed;
+  right: 22px;
+  bottom: 22px;
+  width: 44px;
+  height: 44px;
+  border: 0;
+  border-radius: 8px;
+  background: var(--accent);
+  color: white;
+  font-size: 22px;
+  cursor: pointer;
+  box-shadow: var(--shadow);
+}
+
+@media (max-width: 920px) {
+  .sidebar {
+    position: static;
+    width: auto;
+    max-height: 320px;
+  }
+
+  .page {
+    margin-left: 0;
+  }
+
+  .hero {
+    padding: 36px 22px;
+  }
+
+  .content {
+    padding: 24px 16px 80px;
+  }
+
+  .content section {
+    padding: 22px;
+  }
+}
+
