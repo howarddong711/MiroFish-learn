@@ -2,18 +2,18 @@
 
 > 从零开始读懂一个真实的多 Agent 预测沙盘项目。
 
-本书为学习仓库 `MiroFish-learn` 的主教材。它不是 MiroFish 官方文档，而是面向初学者的源码导读、概念拆解和工程学习路线。
+本书为学习仓库 `MiroFish-learn` 的主教材，面向初学者提供源码导读、概念拆解和工程学习路线。
 
-原项目本地路径：
+MiroFish 原项目：
 
 ```text
-/Users/howarddong/develop/code/MiroFish
+https://github.com/666ghj/MiroFish
 ```
 
-学习仓库本地路径：
+本学习仓库：
 
 ```text
-/Users/howarddong/develop/code/MiroFish-learn
+https://github.com/howarddong711/MiroFish-learn
 ```
 
 ## 写给完全小白的开场
@@ -1345,7 +1345,7 @@ LLM_API_KEY 为空
 检查：
 
 ```bash
-cd /Users/howarddong/develop/code/MiroFish
+cd MiroFish
 ls -la .env
 ```
 
@@ -1634,4 +1634,3 @@ Agent 如何在规则内行动
 ```
 
 如果你能顺着这条线读懂 MiroFish，你就不只是会调用大模型，而是开始理解“Agent 产品”是怎么被做出来的。
-
