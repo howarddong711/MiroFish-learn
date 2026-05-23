@@ -10,9 +10,7 @@
 https://你的用户名.github.io/MiroFish-learn/
 ```
 
-本地也可以直接打开：
-
-[index.html](./index.html)
+本地建议用静态服务器打开，不建议直接双击 `index.html`，因为浏览器可能拦截页面读取 `book.md`。
 
 完整教材源稿：
 
@@ -67,4 +65,3 @@ http://localhost:8080
 4. Branch 选择 `main`
 5. Folder 选择 `/root`
 6. 保存后访问 GitHub Pages 地址
-
