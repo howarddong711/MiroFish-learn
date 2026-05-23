@@ -2,7 +2,7 @@
 
 一本面向初学者的 **MiroFish Agent 项目学习书**。
 
-本仓库不是 MiroFish 官方源码仓库，而是围绕开源项目 [666ghj/MiroFish](https://github.com/666ghj/MiroFish) 编写的中文教学材料。目标是把一个真实的多 Agent 预测沙盘项目拆开讲清楚，帮助读者从零理解 Agent 工程、知识图谱记忆、多智能体模拟、Report Agent、前后端协作和长任务编排。
+本仓库围绕开源项目 [666ghj/MiroFish](https://github.com/666ghj/MiroFish) 编写中文教学材料。目标是把一个真实的多 Agent 预测沙盘项目拆开讲清楚，帮助读者从零理解 Agent 工程、知识图谱记忆、多智能体模拟、Report Agent、前后端协作和长任务编排。
 
 ## 在线阅读
 
@@ -16,9 +16,9 @@
 
 ## 适合谁
 
-- 想学习 Agent 项目但不知道从哪里开始的初学者
-- 会一点 Python 或 JavaScript，但还没读过完整 AI 应用源码的开发者
-- 想理解“多 Agent 模拟”不只是聊天机器人的读者
+- 正在入门 Agent 项目的初学者
+- 具备一点 Python 或 JavaScript 基础，正在阅读完整 AI 应用源码的开发者
+- 想理解多 Agent 模拟完整工程形态的读者
 - 想学习 Flask + Vue + LLM + Zep + OASIS 如何组合成真实产品的人
 
 ## 你会学到什么
@@ -60,7 +60,7 @@
 
 [https://github.com/666ghj/MiroFish](https://github.com/666ghj/MiroFish)
 
-本仓库只提供学习材料和源码导读，不包含 MiroFish 的完整源码，也不替代原项目文档。阅读本书时，建议同时打开原项目代码，对照章节中提到的文件路径学习。
+本仓库聚焦学习材料和源码导读。阅读本书时，建议同时打开原项目代码，对照章节中提到的文件路径学习。
 
 ## 仓库结构
 
@@ -90,7 +90,7 @@ python3 -m http.server 8080
 http://localhost:8080
 ```
 
-不建议直接双击 `index.html`，因为浏览器可能拦截页面读取 `book.md`。
+推荐使用本地静态服务器预览网页版本，这样页面可以稳定读取 `book.md`。
 
 ## 参与改进
 
